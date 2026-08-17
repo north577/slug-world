@@ -1,0 +1,303 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.76), rgba(9, 20, 4, 0.295)),
+    url('../assets/20260725_232757.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#leaves{
+    position: absolute;
+    top: -2px;
+    left: 0;
+    background-size: cover;
+    z-index: 90;
+    filter: drop-shadow(0 0 0.75rem rgb(17, 97, 1));
+}
+
+
+#leaves img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+
+}
+
+
+#leaves2{
+    position: absolute;
+    top: -2px;
+    right: -550px;
+    background-size: cover;
+    z-index: 90;
+    filter: drop-shadow(0 0 0.75rem rgb(17, 97, 1));
+}
+
+#leaves2 img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transform: scaleX(-1);
+}
+
+
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 4px ;
+    text-align: center;
+}
+
+p {
+    color: #00ff15;
+    font-size: 10px;
+    line-height: 1;
+    filter: drop-shadow(0 0 0.75rem rgb(43, 255, 0));
+}
+
+.slug {
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    max-width: 33%;
+    height: auto;
+    display: block;
+    transform: rotate(8deg);
+}
+
+.slug img {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.wrapper:hover .slug img{
+    transform: rotate(-23deg) translateY(180%) translateX(130%);
+   
+}
+ 
+
+
+
+
+.row {
+    position: relative;
+    display: flex;
+    gap: 9px;
+    align-items: stretch;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 120px;
+    padding-right: 120px;
+    height: 90vh;
+}
+
+.main1 {
+    height:auto;
+    background-size: cover;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.main1 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+
+.floating-button1 {
+    position: absolute;
+    top: 12%;
+    right: 20%;
+    transform: translateX(-50%) rotate(-26deg);
+    z-index: 99;
+    width: 220px;
+    height: 220px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url('../assets/artbutton.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: transparent;
+    cursor: pointer;
+    font-size: 0;
+    overflow: hidden;
+}
+.floating-button1:hover {
+    filter: drop-shadow(0 0 0.75rem rgb(43, 255, 0));
+}
+
+.floating-button2 {
+    position: absolute;
+    top: 30%;
+    right: 7%;
+    transform: translateX(-50%) rotate(23deg);
+    z-index: 99;
+    width: 220px;
+    height: 220px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url('../assets/base20.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: transparent;
+    cursor: pointer;
+    font-size: 0;
+    overflow: hidden;
+    box-shadow: none;
+}
+.floating-button2:hover {
+    filter: drop-shadow(0 0 0.75rem rgb(43, 255, 0));
+}
+
+
+.floating-button3 {
+    position: absolute;
+    bottom: 14%;
+    right: 16%;
+    transform: translateX(-50%) rotate(-23deg);
+    z-index: 99;
+    width: 220px;
+    height: 220px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url('../assets/mebutton.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: transparent;
+    cursor: pointer;
+    font-size: 0;
+    overflow: hidden;
+    box-shadow: none;
+}
+.floating-button3:hover {
+    filter: drop-shadow(0 0 0.75rem rgb(43, 255, 0));
+}
+
+
+
+
+@media (max-width: 900px) {
+    .row {
+        flex-direction: column;
+        padding: 12px;
+        gap: 12px;
+        height: auto;
+    }
+
+    .main1,
+    .main2 {
+        width: 100%;
+        height: auto;
+    }
+
+
+    #SLUG {
+        position: absolute;
+        top: 20%;
+        left: 0;
+    }
+
+    .main2-marquee {
+        position: relative;
+    }
+}
+
+
+@media (max-width: 400px) {
+    header {
+        padding: 8px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .row {
+        padding: 8px;
+    }
+
+    .main1 {
+        min-height: 220px;
+    }
+
+    .main2 {
+        min-height: 260px;
+    }
+
+    .floating-button1,
+    .floating-button2 {
+        width: 120px;
+        height: 120px;
+        position: relative;
+        top: 20%;
+        left: 1%;
+    }
+
+    .main2-marquee img {
+        max-height: 58px;
+    }
+
+}
+/*******************************/
+
+
+
+.comicbutton:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 21, 0.8),
+                0 0 30px rgba(0, 255, 21, 0.4);
+}
+
+
+
+
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 0px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

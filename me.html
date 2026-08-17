@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slug</title>
+</head>
+
+<style>
+body {
+    background-color:black;
+    font-family: Arial, sans-serif;}
+
+.pix{
+    padding:20px;
+    display: block;
+    margin: 0 auto;
+	width:768px;}
+	
+h1{
+    color: #00ff15;
+    text-align:center;
+    font-size:150px;
+    z-index: 99;
+}
+
+p{
+    color: #00ff15;
+    text-align:center;
+    font-size:110px;
+    filter: drop-shadow(0 0 10px #00ff15);}
+
+p {font-size:16px;}
+
+nav {
+    text-align: center;
+    font-size: 70px;
+}
+
+nav a {
+    color: rgba(0, 255, 21, 0.9);
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-shadow: 0 0 8px rgba(0, 255, 21, 0.9);
+}
+
+a:hover {
+    text-shadow: 0 0 8px rgba(0, 255, 21, 0.9);
+}
+	
+	
+#facts{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    max-height: 30vh;
+}
+
+#chair{
+    position: absolute;
+    left:40%;
+    top: 50%;
+    padding:20px;
+    display: block;
+    margin: 0 auto;
+    max-height: 50vh;
+    z-index: -8;
+}
+
+
+#vent{
+    position: absolute;
+    left:10%;
+    top: 45%;
+    padding:20px;
+    display: block;
+    margin: 0 auto;
+    max-height: 40vh;
+    transform: rotate(-10deg);
+    z-index: -9;
+}
+
+#leaves{
+    position: absolute;
+    right:0%;
+    top: 0%;
+    display: block;
+    margin: 0 auto;
+    max-height: 50vh;
+    z-index: -9;
+}
+
+#snow1{
+    position: absolute;
+    right:5%;
+    top: 60%;
+    display: block;
+    margin: 0 auto;
+	max-height: 70vh;
+    z-index: -9;
+}
+
+#whip{
+    position: absolute;
+    left:30%;
+    top: 120%;
+    display: block;
+    margin: 0 auto;
+    max-height: 60vh;
+}
+
+#mexico1{
+    position: absolute;
+    right:10%;
+    top: 140%;
+    display: block;
+    margin: 0 auto;
+    max-height: 70vh;
+}
+
+#mycousin2{
+    position: absolute;
+    left:16%;
+    top: 140%;
+    display: block;
+    margin: 0 auto;
+    max-height: 40vh;
+    transform: rotate(-60deg);
+}
+
+.consume p{
+    position: absolute;
+    left: 30%;
+    top: 180%;
+    color: #00ff15;
+    font-size: 30px;
+}
+
+    
+
+#bestfood1{
+    position: absolute;
+    left:25%;
+    top: 190%;
+    display: block;
+    margin: 0 auto;
+    max-height: 30vh;
+}
+
+#bestfood2{
+    position: absolute;
+    left:10%;
+    top: 190%;
+    display: block;
+    margin: 0 auto;
+    max-height: 30vh;
+}
+
+#bestfood3{
+    position: absolute;
+    left:35%;
+    top: 193%;
+    display: block;
+    margin: 0 auto;
+    max-height: 33vh;
+    transform: rotate(6deg);
+}
+
+#bestfood4{
+    position: absolute;
+    left:8%;
+    top: 224%;
+    display: block;
+    margin: 0 auto;
+    max-height: 30vh;
+}
+
+#bestfood5{
+    position: absolute;
+    left:30%;
+    top: 224%;
+    display: block;
+    margin: 0 auto;
+    max-height: 30vh;
+    transform: rotate(98deg);
+}
+
+#bestfood6{
+    position: absolute;
+    left:15%;
+    top: 253%;
+    display: block;
+    margin: 0 auto;
+    max-height: 28vh;
+}
+
+#slut{
+    position: absolute;
+    right:2%;
+    top: 220%;
+    display: block;
+    margin: 0 auto;
+    height: 50vh;
+}
+
+#me{
+    position: absolute;
+    right:10%;
+    top: 260%;
+    display: block;
+    margin: 0 auto;
+    height: 40vh;
+}
+
+#mycousin{
+    position: absolute;
+    right:46%;
+    top: 290%;
+    display: block;
+    margin: 0 auto;
+    max-height: 40vh;
+    transform: rotate(-8deg);
+}
+
+#buildings{
+    position: absolute;
+    left:0%;
+    top: 260%;
+    display: block;
+    margin: 0 auto;
+    max-height: 70vh;
+    z-index: -9;
+}
+
+#joy{
+    position: absolute;
+    left:3%;
+    top: 340%;
+    display: block;
+    margin: 0 auto;
+    max-height: 70vh;
+    z-index: -9;
+}
+
+.kitchen p{
+    position: absolute;
+    right: 26%;
+    top: 320%;
+    color: #00ff15;
+    font-size: 60px;
+}
+
+#cool{
+    position: absolute;
+    right:4%;
+    top: 310%;
+    display: block;
+    margin: 0 auto;
+    max-height: 60vh;
+    z-index: -9;
+}
+
+#fatass{
+    position: absolute;
+    right:4%;
+    top: 350%;
+    display: block;
+    margin: 0 auto;
+    max-height: 50vh;
+}
+
+#slugapple{
+    position: absolute;
+    right:7%;
+    top: 400%;
+    display: block;
+    margin: 0 auto;
+    max-height: 50vh;
+}
+
+#moon{
+    position: absolute;
+    left:5%;
+    top: 409%;
+    display: block;
+    margin: 0 auto;
+    max-height: 130vh;
+    z-index: -9;
+}
+
+.boo p{
+    position: absolute;
+    right: 30%;
+    top: 530%;
+    color: #00ff15;
+    font-size: 30px;
+}
+
+#spider{
+    position: absolute;
+    left:0%;
+    top: 500%;
+    display: block;
+    margin: 0 auto;
+    max-height: 100vh;
+}
+
+#empty{
+    position: absolute;
+    right:0%;
+    top: 560%;
+    display: block;
+    margin: 0 auto;
+    max-height: 120vh;
+}
+
+#burlington{
+    position: absolute;
+    left:40%;
+    top: 670%;
+    display: block;
+    margin: 0 auto;
+    max-height: 90vh;
+}
+
+#fishy{
+    position: absolute;
+    left:5%;
+    top: 690%;
+    display: block;
+    margin: 0 auto;
+    max-height: 60vh;
+}
+
+#bridge{
+    position: absolute;
+    right:0%;
+    top: 682%;
+    display: block;
+    margin: 0 auto;
+    max-height: 50vh;
+}
+
+
+#mini{
+    position: absolute;
+    right:40%;
+    top: 770%;
+    display: block;
+    margin: 0 auto;
+    max-height: 50vh;
+}
+
+
+</style>
+
+<body>
+
+    <nav>
+        <a href="index.html">⬅</a>
+    </nav>
+
+<h1>Me</h1>
+
+<img id="facts" src="assets/facts.jpg">
+
+<img id="leaves" src="assets/leaves.jpg">
+
+<p>Hi <br><br><br> Look around </p>
+
+<img id="chair" src="assets/CHAIRR.jpg">
+
+<img id="vent" src="assets/ventart.png">
+
+<img id="snow1" src="assets/snow1.jpg">
+
+<img id="whip" src="assets/whip.jpg">
+
+<img id="mexico1" src="assets/mexico1.jpg">
+
+<img id="mycousin2" src="assets/mycousin2.jpg">
+
+<div class="consume">
+    <p>food </p>
+</div>
+
+<img id="bestfood1" src="assets/jarritos.jpg">
+
+<img id="bestfood2" src="assets/duvalin.jpg">
+
+<img id="bestfood3" src="assets/cake.jpg">
+
+<img id="bestfood4" src="assets/donut.jpg">
+
+<img id="bestfood5" src="assets/pickles.jpg">
+
+<img id="bestfood6" src="assets/menudo.jpg">
+
+<img id="slut" src="assets/slut.png">
+
+<img id="me" src="assets/me.jpg">
+
+<img id="mycousin" src="assets/mycousin.jpg">
+
+<img id="buildings" src="assets/buildings.jpg">
+
+<img id="joy" src="assets/joy.jpg">
+
+<div class="kitchen">
+    <p>me <br> <br><br> yes i am <br>that stove</p>
+</div>
+
+<img id="fatass" src="assets/fatass.jpg">
+
+<img id="cool" src="assets/cool.jpg">
+
+<img id="slugapple" src="assets/slugapple.jpg">
+
+<img id="moon" src="assets/moon.jpg">
+
+<div class="boo">
+    <p>beautiful sightings</p>
+</div>
+
+<img id="spider" src="assets/spider.jpg">
+
+<img id="empty" src="assets/empty.jpg">
+
+<img id="burlington" src="assets/burlington.jpg">
+
+<img id="fishy" src="assets/fishy.jpg">
+
+<img id="bridge" src="assets/bridge.jpg">
+
+<img id="mini" src="assets/mini.png">
+
+</body>
+</html>
